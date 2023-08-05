@@ -16,8 +16,8 @@ use bubblesort::{
 
 
 fn main() {
-    let max = get_i32(&"Maximum value for array: ");
-    let count = get_i32(&"Number of random values to sort: ");
+    let max = get_i32("Maximum value for array: ");
+    let count = get_i32("Number of random values to sort: ");
     let mut values: Vec<i32> = make_random_vec(count, 0, max);
     print_vec(&values, 20);
     bubble_sort(&mut values);
